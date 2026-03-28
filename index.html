@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style/style.css">
+  <title>Dang Yong Kwan | Academia de Taekwondo — Costa Rica</title>
+  <meta name="description" content="Academia Dang Yong Kwan Sang Sok Ja. Taekwondo ITF en Cartago y WTF en Atenas. Disciplina, fuerza y respeto."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <!-- Logo Cartago como logo principal del navbar -->
+      <img src="Img/logo-cartago.png" alt="Dang Yong Kwan logo"/>
+      <div class="name">
+        Dang Yong Kwan
+        <em>Sang Sok Ja</em>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Nosotros</a></li>
+      <li><a href="#estilos">Estilos</a></li>
+      <li><a href="#sedes">Sedes</a></li>
+      <li><a href="#beneficios">Beneficios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+   
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre"      onclick="closeMenu()">Nosotros</a>
+  <a href="#estilos"    onclick="closeMenu()">Estilos</a>
+  <a href="#sedes"      onclick="closeMenu()">Sedes</a>
+  <a href="#beneficios" onclick="closeMenu()">Beneficios</a>
+  <a href="#galeria"    onclick="closeMenu()">Galería</a>
+  <a href="#contacto"   onclick="closeMenu()">Contacto</a>
+  <a href="https://wa.me/50688463852?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20clases%20de%20Taekwondo"
+     target="_blank" rel="noopener" onclick="closeMenu()" style="color:#25d366">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <!-- logo grande de fondo -->
+  <img class="hero-ghost-logo" src="Img/logo-general.png" alt="" aria-hidden="true"/>
+
+  <div class="container hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <i class="fas fa-shield-halved"></i>
+        Academia de Taekwondo · Costa Rica
+      </div>
+
+      <h1 class="hero-title">
+        <span class="l1">Dang</span>
+        <span class="l2">Yong</span>
+        <span class="l3">Kwan</span>
+      </h1>
+    
+      <p class="hero-sub"> Disciplina · Fuerza · Respeto</p>
+
+      <div class="hero-ctas">
+        <!-- ✏️ EDITAR WhatsApp -->
+
+        <a class="btn btn-outline" href="#sedes">Ver Sedes</a>
+      </div>
+    </div>
+
+    <!-- Logos destacados en el hero -->
+    <div class="hero-logo-wrap">
+      <img src="Img/logo-cartago.png" alt="Logo Cartago ITF" style="margin-bottom:.3rem"/>
+      <span class="hero-logo-label">Cartago · ITF</span>
+      <img src="Img/logo-atenas.png" alt="Logo Atenas WTF" style="margin-top:.6rem"/>
+      <span class="hero-logo-label">Atenas · WTF</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     STATS
+══════════════════════════════════════════ -->
+<section id="stats">
+  <div class="container stats-row">
+    <div class="stat-item">
+      <i class="fas fa-users"></i>
+      <div class="stat-info">
+        <!-- ✏️ EDITAR datos reales -->
+        <strong>200+</strong><span>Estudiantes</span>
+      </div>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-item">
+      <i class="fas fa-location-dot"></i>
+      <div class="stat-info">
+        <strong>2</strong><span>Sedes activas</span>
+      </div>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-item">
+      <i class="fas fa-trophy"></i>
+      <div class="stat-info">
+        <strong>15+</strong><span>Años de experiencia</span>
+      </div>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-item">
+      <i class="fas fa-medal"></i>
+      <div class="stat-info">
+        <strong>ITF &amp; WTF</strong><span>Dos estilos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SOBRE NOSOTROS
+══════════════════════════════════════════ -->
+<section id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-img-wrap reveal">
+      <img class="main-img"
+           src="Img/logo-general.png"
+           alt="Entrenamiento Dang Yong Kwan" loading="lazy"/>
+      <!-- ✏️ EDITAR: años reales -->
+      <div class="sobre-badge">
+        <strong>15+</strong>
+        <span>Años de tradición</span>
+      </div>
+    </div>
+
+    <div class="sobre-text reveal">
+      <span class="tag">Quiénes somos</span>
+      <h2 class="sec-title">Forjamos <span>campeones</span><br/>dentro y fuera del tatami</h2>
+
+      <!-- Logos de ambas sedes -->
+      <div class="sobre-logos">
+        <img src="Img/logo-cartago.png" alt="Logo sede Cartago"/>
+        <img src="Img/logo-atenas.png" alt="Logo sede Atenas"/>
+      </div>
+
+      <!-- ✏️ EDITAR: historia real -->
+      <p>
+        <strong style="color:var(--blanco)">Dang Yong Kwan Sang Sok Ja</strong> es una academia de
+        Taekwondo con presencia en Cartago y Atenas, Costa Rica. Fundada con la misión de transformar
+        vidas a través de las artes marciales, formamos a niños, jóvenes y adultos en los valores del
+        Taekwondo tradicional y olímpico.
+      </p>
+      <p>
+        <!-- ✏️ EDITAR: nombre del maestro -->
+        Bajo la dirección del Maestro <strong style="color:var(--blanco)">Sang Sok Ja</strong>, nuestra
+        academia ofrece un ambiente disciplinado, respetuoso y motivador donde cada estudiante puede
+        alcanzar su máximo potencial.
+      </p>
+
+      <ul class="valores-lista">
+        <li><i class="fas fa-check-circle"></i> Disciplina que transforma vidas</li>
+        <li><i class="fas fa-check-circle"></i> Respeto como pilar fundamental</li>
+        <li><i class="fas fa-check-circle"></i> Superación personal constante</li>
+        <li><i class="fas fa-check-circle"></i> Instructores certificados ITF y WTF</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ESTILOS ITF / WTF
+══════════════════════════════════════════ -->
+<section id="estilos">
+  <div class="container">
+    <div class="estilos-head reveal">
+      <span class="tag">Lo que enseñamos</span>
+      <h2 class="sec-title">Dos <span>estilos</span>, una pasión</h2>
+    </div>
+
+    <div class="estilos-grid">
+      <!-- ITF — logo Cartago -->
+      <div class="estilo-card itf reveal">
+        <img class="estilo-logo" src="Img/logo-cartago.png" alt="ITF logo"/>
+        <span class="estilo-pill">ITF</span>
+        <h3>Taekwondo Tradicional</h3>
+        <p class="sub">International Taekwondo Federation · Sede Cartago</p>
+        <p>
+          El estilo ITF profundiza en la técnica clásica, los patrones (tul) y la defensa personal real.
+          Con énfasis en la formación del carácter y la disciplina marcial, es perfecto para quienes buscan
+          el arte marcial en su sentido más puro.
+        </p>
+        <div class="estilo-tags">
+          <span class="tag-chip">Técnica tradicional</span>
+          <span class="tag-chip">Defensa personal</span>
+          <span class="tag-chip">Patrones (Tul)</span>
+          <span class="tag-chip">Formación del carácter</span>
+        </div>
+      </div>
+
+      <!-- WTF — logo Atenas -->
+      <div class="estilo-card wtf reveal">
+        <img class="estilo-logo" src="Img/logo-atenas.png" alt="WTF logo"/>
+        <span class="estilo-pill">WTF</span>
+        <h3>Taekwondo Olímpico</h3>
+        <p class="sub">World Taekwondo Federation · Sede Atenas</p>
+        <p>
+          El estilo WTF es el Taekwondo olímpico, reconocido mundialmente por su dinamismo y combate
+          emocionante. Enfocado en la competencia nacional e internacional, desarrolla velocidad,
+          potencia y espíritu atlético.
+        </p>
+        <div class="estilo-tags">
+          <span class="tag-chip">Combate olímpico</span>
+          <span class="tag-chip">Competencia</span>
+          <span class="tag-chip">Alta velocidad</span>
+          <span class="tag-chip">Condición atlética</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEDES
+══════════════════════════════════════════ -->
+<section id="sedes">
+  <div class="container">
+    <div class="sedes-head reveal">
+      <span class="tag">Dónde entrenamos</span>
+      <h2 class="sec-title">Nuestras <span>sedes</span></h2>
+    </div>
+
+    <div class="sedes-grid">
+
+      <!-- ══ SEDE CARTAGO ══
+           ✏️ EDITAR: reemplaza href="#" por el enlace real de Google Maps
+      -->
+      <div class="sede-card cartago reveal">
+        <div class="sede-head">
+          <div class="sede-head-left">
+            <img src="Img/logo-cartago.png" alt="Logo Cartago"/>
+            <h3>Cartago<em>Sede ITF</em></h3>
+          </div>
+          <span class="estilo-badge">ITF</span>
+        </div>
+
+        <!-- 🗺️ MAPA CARTAGO PLACEHOLDER -->
+        <div class="sede-map">
+          <i class="fas fa-map"></i>
+          <span><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1405.707026387477!2d-83.89413167355336!3d9.912546288023066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scr!4v1774683623420!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+        </div>
+
+        <div class="sede-body">
+          <div class="sede-info">
+            <div class="sede-row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="lbl">Dirección</span>
+                <!-- ✏️ EDITAR: dirección exacta -->
+                <span class="val">Cartago, Costa Rica</span>
+              </div>
+            </div>
+            <div class="sede-row">
+              <i class="fas fa-clock"></i>
+              <div>
+                <span class="lbl">Horario</span>
+                <span class="val">Lunes y Viernes · 6:00 pm – 8:30 pm</span>
+              </div>
+            </div>
+            <div class="sede-row">
+              <i class="fas fa-shield-halved"></i>
+              <div>
+                <span class="lbl">Estilo</span>
+                <span class="val">Taekwondo ITF — Tradicional</span>
+              </div>
+            </div>
+          </div>
+          <div class="sede-actions">
+            <!-- ✏️ EDITAR: reemplaza href="#" con enlace Google Maps Cartago -->
+            <a href="https://www.google.com/maps?q=9.9125463,-83.8941317" 
+                class="btn-maps" 
+                target="_blank" 
+                rel="noopener">
+            <i class="fas fa-map-location-dot"></i> Ver en Mapa
+            </a>>
+            <a href="https://wa.me/50688463852?text=Hola%2C%20quiero%20info%20de%20la%20sede%20de%20Cartago"
+               class="btn-wa-sm" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ SEDE ATENAS ══
+           ✏️ EDITAR: reemplaza href="#" por el enlace real de Google Maps
+      -->
+      <div class="sede-card atenas reveal">
+        <div class="sede-head">
+          <div class="sede-head-left">
+            <img src="Img/logo-atenas.png" alt="Logo Atenas"/>
+            <h3>Atenas<em>Sede WTF</em></h3>
+          </div>
+          <span class="estilo-badge">WTF</span>
+        </div>
+
+        <!-- 🗺️ MAPA ATENAS PLACEHOLDER -->
+        <div class="sede-map">
+          <i class="fas fa-map"></i>
+          <span><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d608.2236559557128!2d-84.38025533145358!3d9.97796434879835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scr!4v1774684024970!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>e</span>
+        </div>
+
+        <div class="sede-body">
+          <div class="sede-info">
+            <div class="sede-row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="lbl">Dirección</span>
+                <!-- ✏️ EDITAR: dirección exacta -->
+                <span class="val">Atenas, Alajuela, Costa Rica</span>
+              </div>
+            </div>
+            <div class="sede-row">
+              <i class="fas fa-clock"></i>
+              <div>
+                <span class="lbl">Horario</span>
+                <span class="val">Sábados · 10:00 am – 12:00 md</span>
+              </div>
+            </div>
+            <div class="sede-row">
+              <i class="fas fa-star"></i>
+              <div>
+                <span class="lbl">Estilo</span>
+                <span class="val">Taekwondo WTF — Olímpico</span>
+              </div>
+            </div>
+          </div>
+          <div class="sede-actions">
+            <!-- ✏️ EDITAR: reemplaza href="#" con enlace Google Maps Atenas -->
+            <a href="https://maps.app.goo.gl/X5Qcvgzy95mm8c9v7" 
+                class="btn-maps" 
+                target="_blank" 
+                rel="noopener">
+            <i class="fas fa-map-location-dot"></i> Ver en Mapa
+            </a>>
+            <a href="https://wa.me/50688463852?text=Hola%2C%20quiero%20info%20de%20la%20sede%20de%20Atenas"
+               class="btn-wa-sm" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /sedes-grid -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     BENEFICIOS
+══════════════════════════════════════════ -->
+<section id="beneficios">
+  <div class="container">
+    <div class="benef-head reveal">
+      <span class="tag">¿Por qué elegirnos?</span>
+      <h2 class="sec-title">Beneficios del <span>Taekwondo</span></h2>
+    </div>
+    <div class="benef-grid">
+      <div class="benef-card reveal">
+        <div class="benef-icon"><i class="fas fa-brain"></i></div>
+        <h4>Disciplina Mental</h4>
+        <p>Desarrolla concentración, autocontrol y claridad mental. El tatami enseña a superar cualquier obstáculo.</p>
+      </div>
+      <div class="benef-card reveal">
+        <div class="benef-icon"><i class="fas fa-heart-pulse"></i></div>
+        <h4>Condición Física</h4>
+        <p>Mejora resistencia, flexibilidad, velocidad y coordinación con entrenamientos de alto nivel.</p>
+      </div>
+      <div class="benef-card reveal">
+        <div class="benef-icon"><i class="fas fa-shield"></i></div>
+        <h4>Defensa Personal</h4>
+        <p>Aprende técnicas reales y efectivas que te darán seguridad y confianza en tu día a día.</p>
+      </div>
+      <div class="benef-card reveal">
+        <div class="benef-icon"><i class="fas fa-star"></i></div>
+        <h4>Confianza &amp; Respeto</h4>
+        <p>Construye autoestima sólida basada en el esfuerzo y el respeto mutuo dentro y fuera del tatami.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     GALERÍA
+══════════════════════════════════════════ -->
+<section id="galeria">
+  <div class="container">
+    <div class="galeria-head reveal">
+      <span class="tag">Nuestro mundo</span>
+      <h2 class="sec-title">Galería de <span>entrenamiento</span></h2>
+    </div>
+    <div class="galeria-grid reveal">
+      <!-- ✏️ EDITAR: reemplaza con fotos reales de tu academia -->
+      <div class="gal-item">
+        <img src="Galeria/" alt="Combate" loading="lazy"/>
+        <div class="ov"><span>Combate</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="Galeria/Entrenamiento.png" alt="Entrenamiento" loading="lazy"/>
+        <div class="ov"><span>Entrenamiento</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="Galeria/Tecnica.png" alt="Técnica" loading="lazy"/>
+        <div class="ov"><span>Técnica</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="Galeria/TodasLasEdades.png" alt="Niños" loading="lazy"/>
+        <div class="ov"><span>Todas las edades</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="Galeria/CondicionFisica.png" alt="Físico" loading="lazy"/>
+        <div class="ov"><span>Condición física</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CTA CONTACTO
+══════════════════════════════════════════ -->
+<section id="contacto">
+  <div class="container cta-wrap reveal">
+    <!-- Ambos logos juntos -->
+    <div class="cta-logos">
+      <img src="Img/logo-cartago.png" alt="Logo Cartago"/>
+      <div class="sep"></div>
+      <img src="Img/logo-atenas.png" alt="Logo Atenas"/>
+    </div>
+
+    <span class="tag" style="text-align:center;display:block;margin-bottom:.5rem">Empieza hoy</span>
+    <h2 class="sec-title">¿Listo para <span>entrenar</span>?</h2>
+    <p style="margin-top:.8rem">
+      Escríbenos por WhatsApp y te damos toda la información sobre horarios,
+      costos y cómo inscribirte. ¡La primera clase cambia todo! 
+    </p>
+
+    <!-- ✏️ EDITAR WhatsApp -->
+     <div>
+        <a class="wa-cta-btn"
+        href="https://wa.me/50688463852?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20clases%20de%20Taekwondo%20Cartago"
+        target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp <strong>Sede Cartago</strong>
+        </a>
+         <span class="cta-note">Numero Sede Carttago · +506 8846-3852</span>
+     </div>
+    
+    <div>
+        <a class="wa-cta-btn"
+        href="https://wa.me/50688463852?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20clases%20de%20Taekwondo%20Atenas"
+        target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp <strong>Sede Atenas</strong>
+        </a>
+        <span class="cta-note">Numero Sede Atenas · +506 8846-3852</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="Img/logo-cartago.png" alt="Logo"/>
+          Dang Yong Kwan
+        </div>
+        <p>Taekwondo ITF y WTF en Cartago y Atenas. Formando campeones con disciplina, respeto y dedicación.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#sobre">Nosotros</a></li>
+          <li><a href="#estilos">Estilos</a></li>
+          <li><a href="#sedes">Sedes</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Sedes</h5>
+        <ul>
+          <li><a href="#sedes">Cartago · Lun y Vie 6–8:30 pm</a></li>
+          <li><a href="#sedes">Atenas · Sábados 10 am–12 md</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul>
+          <!-- ✏️ EDITAR -->
+          <li><a href="https://wa.me/50688463852" target="_blank" rel="noopener">+506 8846-3852</a></li>
+          <li><a href="#"><!-- tu correo --></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <!-- ✏️ EDITAR año -->
+      <p>&copy; 2025 Dang Yong Kwan Sang Sok Ja · Todos los derechos reservados</p>
+      <div class="social-links">
+        <!-- ✏️ EDITAR redes sociales reales -->
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"  target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"    target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/50688463852" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     BOTÓN FLOTANTE WA
+══════════════════════════════════════════ -->
+<!-- ✏️ EDITAR WhatsApp -->
+<div class="wa-container">
+  
+  <!-- Botón principal -->
+  <button id="wa-main">
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <!-- Opciones -->
+  <div id="wa-options">
+    
+    <a href="https://wa.me/50688463852?text=Hola%2C%20quiero%20info%20de%20Taekwondo%20Cartago"
+       target="_blank">
+       Cartago
+    </a>
+
+    <a href="https://wa.me/50688463852?text=Hola%2C%20quiero%20info%20de%20Taekwondo%20Atenas"
+       target="_blank">
+       Atenas
+    </a>
+
+  </div>
+
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
